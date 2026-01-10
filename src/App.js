@@ -32,7 +32,7 @@ function App() {
             {/* Desktop Button */}
             <Link to="/book-consultation" className="hidden md:block">
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">
-                Book Consultation
+                Book Service
               </button>
             </Link>
             
@@ -55,7 +55,7 @@ function App() {
                 <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 border-b border-blue-100" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                 <Link to="/book-consultation" onClick={() => setMobileMenuOpen(false)}>
                   <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition-all duration-300 shadow-md">
-                    Book Consultation
+                    Book Service
                   </button>
                 </Link>
               </div>
@@ -124,7 +124,7 @@ function App() {
                   </p>
                   <p className="flex items-center gap-2">
                     <FaEnvelope className="text-blue-600" />
-                    codeStack@gmail.com
+                    technologiescodexa@gmail.com
                   </p>
                 </div>
               </div>

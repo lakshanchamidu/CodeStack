@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -19,15 +20,42 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Add your form submission logic here
-    alert('Thank you for contacting us! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      message: ''
+    
+    // EmailJS walata yana parameters
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      company: formData.company,
+      message: formData.message,
+      to_email: 'technologiescodexa@gmail.com',
+      service: 'General Inquiry',  // Contact form ekata
+      date: new Date().toLocaleDateString(),
+      time: new Date().toLocaleTimeString()
+    };
+
+    // EmailJS configuration
+    emailjs.send(
+      'service_143xk7d',      
+      'template_ntx6a7m',  
+      templateParams,
+      'ZqCyiG0JlbBELnXre'       
+    )
+    .then((response) => {
+      console.log('Email sent successfully!', response.status, response.text);
+      alert('Thank you for contacting us! We have received your message and will get back to you soon at ' + formData.email);
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: ''
+      });
+    })
+    .catch((error) => {
+      console.error('Email sending failed:', error);
+      alert('Sorry, something went wrong. Please email us directly at technologiescodexa@gmail.com or call +94 76 945 2840');
     });
   };
 
@@ -172,10 +200,10 @@ function Contact() {
                     <div>
                       <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">Email</h3>
                       <a 
-                        href="mailto:codeStack@gmail.com" 
+                        href="mailto:technologiescodexa@gmail.com" 
                         className="text-sm sm:text-base text-gray-700 hover:text-blue-600 transition-colors break-all"
                       >
-                        codeStack@gmail.com
+                        technologiescodexa@gmail.com
                       </a>
                     </div>
                   </div>

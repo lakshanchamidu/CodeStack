@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaPhone, FaLightbulb, FaRocket, FaCheck } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 function BookConsultation() {
   const [formData, setFormData] = useState({
@@ -22,17 +23,44 @@ function BookConsultation() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Consultation booked:', formData);
-    alert('Thank you! Your consultation has been booked. We will send you a confirmation email shortly.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      service: '',
-      date: '',
-      time: '',
-      message: ''
+    
+    // EmailJS walata yana parameters
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      company: formData.company,
+      service: formData.service,
+      date: formData.date,
+      time: formData.time,
+      message: formData.message,
+      to_email: 'technologiescodexa@gmail.com'
+    };
+
+    emailjs.send(
+      'service_143xk7d',      
+      'template_7ewygkh',     
+      templateParams,
+      'ZqCyiG0JlbBELnXre'       
+    )
+    .then((response) => {
+      console.log('Email sent successfully!', response.status, response.text);
+      alert('Thank you! Your service booking has been received. We will contact you soon at ' + formData.email);
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        service: '',
+        date: '',
+        time: '',
+        message: ''
+      });
+    })
+    .catch((error) => {
+      console.error('Email sending failed:', error);
+      alert('Sorry, something went wrong. Please email us directly at technologiescodexa@gmail.com or call +94 76 945 2840');
     });
   };
 
@@ -61,10 +89,10 @@ function BookConsultation() {
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-blue-100 to-indigo-100">
         <div className="container mx-auto text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 animate-fadeInUp">
-            Book a Free <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Consultation</span>
+            Book Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Service</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto px-4">
-            Schedule a free consultation with our experts to discuss your project and how we can help you achieve your goals.
+            Schedule a service booking with our experts to discuss your project and how we can help you achieve your goals.
           </p>
         </div>
       </section>
@@ -215,7 +243,7 @@ function BookConsultation() {
                 type="submit"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-md"
               >
-                Book Consultation
+                Book Service
               </button>
             </form>
           </div>
@@ -258,7 +286,7 @@ function BookConsultation() {
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-blue-50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 text-center mb-8 sm:mb-10 md:mb-12">
-            Why Book a <span className="text-blue-600">Consultation?</span>
+            Why Book Your <span className="text-blue-600">Service?</span>
           </h2>
           <div className="space-y-4 sm:space-y-6">
             <div className="flex items-start gap-3 sm:gap-4 bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 border-blue-100 shadow-md">

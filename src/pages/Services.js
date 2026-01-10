@@ -95,9 +95,9 @@ function Services() {
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
             From academic projects to business websites and mobile apps, we deliver tailored software solutions that meet your specific needs with quality and professionalism.
           </p>
-          <Link to="/contact">
+          <Link to="/book-consultation">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-md">
-              Get a Free Consultation
+              Book Service
             </button>
           </Link>
         </div>
@@ -181,7 +181,7 @@ function Services() {
             Ready to Transform Your <span className="text-blue-100">Business?</span>
           </h2>
           <p className="text-blue-100 text-base sm:text-lg mb-6 sm:mb-8 px-4">
-            Contact us today to discuss how our innovative services can help your business grow. We offer free consultations to understand your needs.
+            Contact us today to discuss how our innovative services can help your business grow. Book your service with us to get started.
           </p>
           <Link to="/contact">
             <button className="bg-white hover:bg-blue-50 text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
