@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaRobot, FaRocket, FaBolt, FaUsers, FaCheck } from 'react-icons/fa';
+import { FaRobot, FaGraduationCap, FaGlobe, FaCheck } from 'react-icons/fa';
 
 function Services() {
   const [isVisible, setIsVisible] = useState({});
@@ -27,56 +27,46 @@ function Services() {
 
   const services = [
     {
-      icon: <FaRobot />,
-      title: "AI Chatbot Development",
-      description: "Custom AI chatbots to enhance customer engagement and automate support.",
+      icon: <FaGraduationCap />,
+      title: "Academic Project Development",
+      description: "Professional assistance with university projects, assignments, and research work.",
       features: [
-        "Natural language processing capabilities",
-        "Integration with existing platforms",
-        "Custom training for your business domain",
-        "Analytics dashboard for performance tracking",
-        "24/7 customer support automation"
+        "Custom software development projects",
+        "Research paper implementation",
+        "Algorithm design and optimization",
+        "Data analysis and visualization",
+        "Code documentation and reports",
+        "Timely delivery with quality assurance"
+      ],
+      image: "https://images.pexels.com/photos/5905918/pexels-photo-5905918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      icon: <FaRobot />,
+      title: "Smart AI Chatbot Solutions",
+      description: "Intelligent chatbots powered by AI to automate customer interactions and support.",
+      features: [
+        "Natural language understanding",
+        "Multi-platform integration (WhatsApp, Web, Social Media)",
+        "Custom training for your business",
+        "Automated customer support 24/7",
+        "Analytics and insights dashboard",
+        "Continuous learning and improvement"
       ],
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      icon: <FaRocket />,
-      title: "MVP Websites & Apps",
-      description: "Rapid development of minimum viable products to validate your business ideas.",
+      icon: <FaGlobe />,
+      title: "Professional Business Websites",
+      description: "Professional business websites that help you establish strong online presence.",
       features: [
-        "Rapid prototyping and development",
-        "User-centric design approach",
-        "Essential features implementation",
-        "Scalable architecture",
-        "Post-launch support and iterations"
+        "Modern and responsive design",
+        "SEO optimized for better visibility",
+        "E-commerce integration available",
+        "Content management system",
+        "Fast loading and secure",
+        "Ongoing maintenance and support"
       ],
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      icon: <FaBolt />,
-      title: "Automation & AI Tools",
-      description: "Streamline your business processes with custom automation solutions.",
-      features: [
-        "Workflow automation",
-        "Data processing and analysis",
-        "Custom AI algorithms",
-        "Integration with existing systems",
-        "Performance monitoring and optimization"
-      ],
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      icon: <FaUsers />,
-      title: "Intern-Led Product Prototypes",
-      description: "Innovative prototypes developed by our talented interns under expert guidance.",
-      features: [
-        "Fresh perspectives and innovative ideas",
-        "Cost-effective development",
-        "Supervised by experienced mentors",
-        "Regular progress updates",
-        "Option to hire interns post-project"
-      ],
-      image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      image: "https://images.pexels.com/photos/326508/pexels-photo-326508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ];
 

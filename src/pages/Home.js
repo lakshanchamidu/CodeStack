@@ -156,18 +156,18 @@ function Home() {
             {[
               {
                 icon: <FaRobot />,
-                title: "AI Chatbot Development",
-                description: "Custom AI chatbots to enhance customer engagement and automate support."
+                title: "University Assignments Development",
+                description: "Professional assistance with university projects, assignments, and research work."
               },
               {
                 icon: <FaRocket />,
-                title: "MVP Websites & Apps",
-                description: "Rapid development of minimum viable products to validate your business ideas."
+                title: "AI Chatbot Development",
+                description: "Intelligent chatbots powered by AI to automate customer interactions and support."
               },
               {
                 icon: <FaBolt />,
-                title: "Automation & AI Tools",
-                description: "Streamline your business processes with custom automation solutions."
+                title: "Websites for Your Business",
+                description: "Professional business websites that help you establish strong online presence."
               }
             ].map((service, index) => (
               <div 

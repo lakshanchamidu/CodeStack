@@ -37,11 +37,10 @@ function BookConsultation() {
   };
 
   const services = [
+    "University Assignments Development",
     "AI Chatbot Development",
-    "MVP Websites & Apps",
-    "Automation & AI Tools",
-    "Intern-Led Product Prototypes",
-    "Custom AI Solutions",
+    "Websites for Your Business",
+    "Custom Software Development",
     "Other"
   ];
 

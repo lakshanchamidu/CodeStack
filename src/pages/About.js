@@ -92,7 +92,7 @@ function About() {
                 Our founder, Kalhara Thabrew, recognized the growing demand for innovative AI solutions and saw an opportunity to showcase Sri Lankan talent on the global stage. With over 10 years of experience in software development and AI, he set out to build a company that delivers exceptional results.
               </p>
               <p className="text-gray-700 text-base sm:text-lg">
-                Today, Code Stack specializes in developing AI chatbots, MVPs, and custom automation tools that help businesses streamline operations, enhance customer experiences, and drive growth.
+                Today, Code Stack specializes in developing AI chatbots, professional websites, and providing expert assistance with university assignments and software projects that help businesses and students achieve their goals.
               </p>
             </div>
             <div className="relative">
