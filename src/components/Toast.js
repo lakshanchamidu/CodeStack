@@ -2,11 +2,11 @@ import React from 'react';
 import { FaCheckCircle, FaExclamationCircle, FaTimes } from 'react-icons/fa';
 
 const Toast = ({ message, type = 'success', onClose }) => {
-  const bgColor = type === 'success' ? 'bg-green-500' : 'bg-red-500';
+  const bgColor = type === 'success' ? 'bg-green-900' : 'bg-red-900';
   const icon = type === 'success' ? <FaCheckCircle /> : <FaExclamationCircle />;
 
   return (
-    <div className="fixed top-24 right-4 sm:right-8 z-50 animate-slideIn max-w-md">
+    <div className="fixed bottom-6 right-4 sm:right-8 z-50 animate-slideIn max-w-md">
       <div className={`${bgColor} text-white px-6 py-4 rounded-2xl shadow-2xl flex items-start gap-4`}>
         <div className="text-2xl mt-1 flex-shrink-0">
           {icon}

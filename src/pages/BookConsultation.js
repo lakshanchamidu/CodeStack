@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaPhone, FaLightbulb, FaRocket, FaCheck } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
+import Toast from '../components/Toast';
 
 function BookConsultation() {
   const [formData, setFormData] = useState({
@@ -13,6 +14,13 @@ function BookConsultation() {
     time: '',
     message: ''
   });
+  
+  const [toast, setToast] = useState(null);
+
+  const showToast = (message, type = 'success') => {
+    setToast({ message, type });
+    setTimeout(() => setToast(null), 5000); 
+  };
 
   const handleChange = (e) => {
     setFormData({
@@ -45,7 +53,7 @@ function BookConsultation() {
     )
     .then((response) => {
       console.log('Email sent successfully!', response.status, response.text);
-      alert('Thank you! Your service booking has been received. We will contact you soon at ' + formData.email);
+      showToast(`Great! Your ${formData.service} service booking is confirmed for ${formData.date} at ${formData.time}. We will contact you at ${formData.email} shortly!`, 'success');
       // Reset form
       setFormData({
         name: '',
@@ -60,7 +68,7 @@ function BookConsultation() {
     })
     .catch((error) => {
       console.error('Email sending failed:', error);
-      alert('Sorry, something went wrong. Please email us directly at technologiescodexa@gmail.com or call +94 76 945 2840');
+      showToast('Sorry, booking failed. Please call us directly at +94 76 945 2840 or email technologiescodexa@gmail.com', 'error');
     });
   };
 
@@ -85,6 +93,13 @@ function BookConsultation() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 pt-20">
+      {toast && (
+        <Toast 
+          message={toast.message} 
+          type={toast.type} 
+          onClose={() => setToast(null)} 
+        />
+      )}
       {/* Hero Section */}
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-blue-100 to-indigo-100">
         <div className="container mx-auto text-center">

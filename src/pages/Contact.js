@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
+import Toast from '../components/Toast';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -10,6 +11,13 @@ function Contact() {
     company: '',
     message: ''
   });
+  
+  const [toast, setToast] = useState(null);
+
+  const showToast = (message, type = 'success') => {
+    setToast({ message, type });
+    setTimeout(() => setToast(null), 5000); // 5 seconds passe auto close
+  };
 
   const handleChange = (e) => {
     setFormData({
@@ -43,7 +51,7 @@ function Contact() {
     )
     .then((response) => {
       console.log('Email sent successfully!', response.status, response.text);
-      alert('Thank you for contacting us! We have received your message and will get back to you soon at ' + formData.email);
+      showToast(`Thank you ${formData.name}! We have received your message and will get back to you soon at ${formData.email}`, 'success');
       // Reset form
       setFormData({
         name: '',
@@ -55,12 +63,19 @@ function Contact() {
     })
     .catch((error) => {
       console.error('Email sending failed:', error);
-      alert('Sorry, something went wrong. Please email us directly at technologiescodexa@gmail.com or call +94 76 945 2840');
+      showToast('Sorry, something went wrong. Please email us directly at technologiescodexa@gmail.com or call +94 76 945 2840', 'error');
     });
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 pt-20">
+      {toast && (
+        <Toast 
+          message={toast.message} 
+          type={toast.type} 
+          onClose={() => setToast(null)} 
+        />
+      )}
       {/* Hero Section */}
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-blue-100 to-indigo-100">
         <div className="container mx-auto text-center">
@@ -232,23 +247,16 @@ function Contact() {
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Follow Us</h3>
                 <div className="flex gap-3 sm:gap-4">
                   <a 
-                    href="https://www.linkedin.com/company/katisatech/" 
+                    href="https://www.linkedin.com/company/codexatechnologies/about/?viewAsMember=true" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-blue-50 text-blue-600 p-3 sm:p-4 rounded-lg text-xl sm:text-2xl hover:bg-blue-100 transition-colors"
                   >
                     <FaLinkedin />
                   </a>
+                  
                   <a 
-                    href="https://twitter.com/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="bg-blue-50 text-blue-600 p-3 sm:p-4 rounded-lg text-xl sm:text-2xl hover:bg-blue-100 transition-colors"
-                  >
-                    <FaTwitter />
-                  </a>
-                  <a 
-                    href="https://facebook.com/" 
+                    href="https://www.facebook.com/profile.php?id=61586597090877" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-blue-50 text-blue-600 p-3 sm:p-4 rounded-lg text-xl sm:text-2xl hover:bg-blue-100 transition-colors"
