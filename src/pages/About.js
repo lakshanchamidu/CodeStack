@@ -98,7 +98,7 @@ function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-200/40 to-indigo-200/40 blur-3xl"></div>
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
+                src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
                 alt="Team meeting" 
                 className="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500 w-full h-auto"
               />
@@ -156,37 +156,92 @@ function About() {
       </section>
 
       {/* Meet Our Team */}
-      <section id="team" data-animate className={`py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-blue-50 transition-all duration-1000 ${isVisible['team'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <section id="team" data-animate className={`py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-gradient-to-br from-blue-50 to-indigo-50 transition-all duration-1000 ${isVisible['team'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="container mx-auto">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-              Meet Our <span className="text-blue-600">Team</span>
+              Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Team</span>
             </h2>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-              Our diverse team of experts is passionate about technology and making a positive impact.
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
+              Our diverse team of experts is passionate about technology and making a positive impact through innovative solutions.
             </p>
           </div>
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-blue-100 shadow-md text-center">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden border-4 border-blue-300">
-                <img 
-                  src="https://katisa.netlify.app/static/media/Kalhara%20thabrew.53b28bb65f6974373834.jpeg"
-                  alt="Kalhara Thabrew"
-                  className="w-full h-full object-cover"
-                />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            {/* Team Member 1 */}
+            <div className="group bg-white rounded-2xl p-6 border-2 border-blue-100 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                <div className="relative w-full rounded-2xl overflow-hidden border-4 border-blue-200 group-hover:border-blue-400 transition-colors duration-300" style={{aspectRatio: '3/4', maxHeight: '320px'}}>
+                  <img 
+                    src={`${process.env.PUBLIC_URL}/images/team-member-1.jpeg`}
+                    alt="Team Member"
+                    className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2">Kalhara Thabrew</h3>
-              <p className="text-blue-600 text-base sm:text-lg md:text-xl mb-3 sm:mb-4">Founder & CEO</p>
-              <p className="text-gray-700 mb-4 sm:mb-6 text-sm sm:text-base md:text-lg">
-                Visionary tech entrepreneur with 10+ years of experience in AI and software development, leading Code Stack into the future.
-              </p>
-              <div className="flex gap-3 sm:gap-4 justify-center">
-                <a href="https://www.instagram.com/kali_x_sa/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  Instagram
-                </a>
-                <a href="https://www.linkedin.com/in/kalhara-thabrew-288565258/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
-                  <FaLinkedin />
-                </a>
+              <div className="text-center">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Diyath Lakpura</h3>
+                <p className="text-blue-600 text-base sm:text-lg font-semibold mb-3">Developer</p>
+                <p className="text-gray-600 text-sm sm:text-base mb-4 leading-relaxed">
+                  Passionate developer specializing in modern web technologies and building scalable applications.
+                </p>
+                <div className="flex gap-4 justify-center">
+                  <a href="https://www.linkedin.com/in/kalhara-thabrew-288565258/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl transform hover:scale-110 duration-200">
+                    <FaLinkedin />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Team Member 2 */}
+            <div className="group bg-white rounded-2xl p-6 border-2 border-blue-100 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                <div className="relative w-full rounded-2xl overflow-hidden border-4 border-blue-200 group-hover:border-blue-400 transition-colors duration-300" style={{aspectRatio: '3/4', maxHeight: '320px'}}>
+                  <img 
+                    src={`${process.env.PUBLIC_URL}/images/team-member-2.jpeg`}
+                    alt="Team Member"
+                    className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Chamidu Lakshan</h3>
+                <p className="text-blue-600 text-base sm:text-lg font-semibold mb-3">Developer</p>
+                <p className="text-gray-600 text-sm sm:text-base mb-4 leading-relaxed">
+                  Creative developer focused on creating elegant solutions and delivering exceptional user experiences.
+                </p>
+                <div className="flex gap-4 justify-center">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl transform hover:scale-110 duration-200">
+                    <FaLinkedin />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Team Member 3 */}
+            <div className="group bg-white rounded-2xl p-6 border-2 border-blue-100 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                <div className="relative w-full rounded-2xl overflow-hidden border-4 border-blue-200 group-hover:border-blue-400 transition-colors duration-300" style={{aspectRatio: '3/4', maxHeight: '320px'}}>
+                  <img 
+                    src={`${process.env.PUBLIC_URL}/images/team-member-3.jpeg`}
+                    alt="Team Member"
+                    className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Pasindu Randula</h3>
+                <p className="text-blue-600 text-base sm:text-lg font-semibold mb-3">Developer</p>
+                <p className="text-gray-600 text-sm sm:text-base mb-4 leading-relaxed">
+                  Skilled developer with expertise in innovative technologies and problem-solving approaches.
+                </p>
+                <div className="flex gap-4 justify-center">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl transform hover:scale-110 duration-200">
+                    <FaLinkedin />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -200,7 +255,7 @@ function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-200/40 to-indigo-200/40 blur-3xl"></div>
               <img 
-                src="https://images.unsplash.com/photo-1546942113-a6c43b63104a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
+                src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
                 alt="Sri Lanka" 
                 className="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500 w-full h-auto"
               />

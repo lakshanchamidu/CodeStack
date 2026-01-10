@@ -37,7 +37,7 @@ function Services() {
         "Analytics dashboard for performance tracking",
         "24/7 customer support automation"
       ],
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       icon: <FaRocket />,
@@ -50,7 +50,7 @@ function Services() {
         "Scalable architecture",
         "Post-launch support and iterations"
       ],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80"
+      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       icon: <FaBolt />,
@@ -63,7 +63,7 @@ function Services() {
         "Integration with existing systems",
         "Performance monitoring and optimization"
       ],
-      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       icon: <FaUsers />,
@@ -76,7 +76,7 @@ function Services() {
         "Regular progress updates",
         "Option to hire interns post-project"
       ],
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1171&q=80"
+      image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ];
 

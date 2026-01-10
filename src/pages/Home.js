@@ -126,7 +126,7 @@ function Home() {
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-400/30 via-indigo-400/30 to-purple-400/30 blur-3xl rounded-3xl"></div>
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1171&q=80" 
+                  src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
                   alt="Team collaboration" 
                   className="relative rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500 border-4 border-white"
                 />
