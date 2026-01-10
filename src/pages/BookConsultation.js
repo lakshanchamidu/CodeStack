@@ -37,9 +37,10 @@ function BookConsultation() {
   };
 
   const services = [
-    "University Assignments Development",
-    "AI Chatbot Development",
-    "Websites for Your Business",
+    "Academic Project Development",
+    "Smart AI Chatbot Solutions",
+    "Professional Business Websites",
+    "Mobile App Development",
     "Custom Software Development",
     "Other"
   ];

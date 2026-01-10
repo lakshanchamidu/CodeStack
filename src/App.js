@@ -18,7 +18,7 @@ function App() {
         <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-blue-200 shadow-sm">
           <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
             <Link to="/" className="text-xl sm:text-2xl font-bold text-gray-800 flex items-center gap-2 hover:opacity-80 transition-opacity" onClick={() => setMobileMenuOpen(false)}>
-              <span><span className="text-blue-600">Code</span>Stack</span>
+              <img src={`${process.env.PUBLIC_URL}/images/logo.jpeg`} alt="Codexa Logo" className="h-14 w-20 sm:h-16 sm:w-24 rounded-lg object-cover" />
             </Link>
             
             {/* Desktop Navigation */}
@@ -77,10 +77,10 @@ function App() {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
               <div className="text-center sm:text-left">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">
-                  <span className="text-blue-600">Code</span>Stack
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Building tomorrow's AI solutions today.</p>
+                <div className="flex items-center justify-center sm:justify-start mb-3 sm:mb-4">
+                  <img src={`${process.env.PUBLIC_URL}/images/logo.jpeg`} alt="Codexa Logo" className="h-16 w-24 rounded-lg object-cover" />
+                </div>
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Building tomorrow's software solutions today.</p>
                 <div className="flex gap-3 sm:gap-4 justify-center sm:justify-start">
                   <a href="https://www.linkedin.com/company/katisatech/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors text-xl sm:text-2xl">
                     <FaLinkedin />
@@ -105,9 +105,10 @@ function App() {
               <div className="text-center sm:text-left">
                 <h4 className="text-gray-800 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Our Services</h4>
                 <div className="flex flex-col gap-2 text-sm sm:text-base">
-                  <Link to="/services" className="text-gray-600 hover:text-blue-600 transition-colors">→ AI Chatbot Development</Link>
-                  <Link to="/services" className="text-gray-600 hover:text-blue-600 transition-colors">→ MVP Websites & Apps</Link>
-                  <Link to="/services" className="text-gray-600 hover:text-blue-600 transition-colors">→ Automation & AI Tools</Link>
+                  <Link to="/services" className="text-gray-600 hover:text-blue-600 transition-colors">→ Academic Project Development</Link>
+                  <Link to="/services" className="text-gray-600 hover:text-blue-600 transition-colors">→ Smart AI Chatbot Solutions</Link>
+                  <Link to="/services" className="text-gray-600 hover:text-blue-600 transition-colors">→ Professional Business Websites</Link>
+                  <Link to="/services" className="text-gray-600 hover:text-blue-600 transition-colors">→ Mobile App Development</Link>
                 </div>
               </div>
               <div className="text-center sm:text-left">
@@ -129,7 +130,7 @@ function App() {
               </div>
             </div>
             <div className="border-t border-blue-200 pt-6 sm:pt-8 text-center text-gray-600 text-xs sm:text-sm">
-              © 2026 Code Stack. All rights reserved.
+              © 2026 Codexa. All rights reserved.
             </div>
           </div>
         </footer>

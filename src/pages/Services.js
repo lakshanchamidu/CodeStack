@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaRobot, FaGraduationCap, FaGlobe, FaCheck } from 'react-icons/fa';
+import { FaRobot, FaGraduationCap, FaGlobe, FaMobileAlt, FaCheck } from 'react-icons/fa';
 
 function Services() {
   const [isVisible, setIsVisible] = useState({});
@@ -67,6 +67,20 @@ function Services() {
         "Ongoing maintenance and support"
       ],
       image: "https://images.pexels.com/photos/326508/pexels-photo-326508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      icon: <FaMobileAlt />,
+      title: "Mobile App Development",
+      description: "Custom mobile applications for iOS and Android to expand your digital presence.",
+      features: [
+        "Native and cross-platform development",
+        "User-friendly interface design",
+        "Secure payment integration",
+        "Push notifications and real-time updates",
+        "App Store and Play Store deployment",
+        "Maintenance and regular updates"
+      ],
+      image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ];
 
@@ -79,7 +93,7 @@ function Services() {
             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Services</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
-            We deliver AI-powered solutions that help businesses innovate and grow. Our services combine cutting-edge technology with practical implementation.
+            From academic projects to business websites and mobile apps, we deliver tailored software solutions that meet your specific needs with quality and professionalism.
           </p>
           <Link to="/contact">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-md">
@@ -167,7 +181,7 @@ function Services() {
             Ready to Transform Your <span className="text-blue-100">Business?</span>
           </h2>
           <p className="text-blue-100 text-base sm:text-lg mb-6 sm:mb-8 px-4">
-            Contact us today to discuss how our AI-powered services can help your business grow. We offer free consultations to understand your needs.
+            Contact us today to discuss how our innovative services can help your business grow. We offer free consultations to understand your needs.
           </p>
           <Link to="/contact">
             <button className="bg-white hover:bg-blue-50 text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">

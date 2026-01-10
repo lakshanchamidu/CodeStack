@@ -45,7 +45,7 @@ function Home() {
               Building Tomorrow's
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">
-                AI Solutions Today
+                Software Solutions Today
               </span>
             </h1>
             <p 
@@ -54,7 +54,7 @@ function Home() {
                 animation: 'fadeInUp 1s ease-out 0.2s both',
               }}
             >
-              We build AI-powered software solutions that help businesses innovate and grow in Sri Lanka and beyond.
+              We build innovative software solutions that help businesses innovate and grow in Sri Lanka and beyond.
             </p>
             <div 
               className="flex gap-4 justify-center animate-fadeInUp"
@@ -106,15 +106,15 @@ function Home() {
                 <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase bg-blue-50 px-4 py-2 rounded-full">About Us</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                About <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Code Stack</span>
+                About <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Codexa</span>
               </h2>
               <p className="text-gray-700 mb-4 text-lg">
-                Code Stack is a tech startup based in Sri Lanka, specializing in AI-powered software development. 
+                Codexa is a tech startup based in Sri Lanka, specializing in innovative software development. 
                 We combine cutting-edge technology with local talent to deliver innovative solutions to businesses worldwide.
               </p>
               <p className="text-gray-700 mb-6 text-lg">
-                Our mission is to help businesses leverage the power of artificial intelligence to improve their operations, 
-                enhance customer experiences, and drive growth.
+                Our mission is to help businesses and students achieve their goals through custom software development, 
+                professional websites, mobile apps, and smart AI solutions.
               </p>
               <Link to="/about">
                 <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
@@ -145,10 +145,10 @@ function Home() {
               <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase bg-white px-4 py-2 rounded-full shadow-sm">Our Services</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Transform Your Business with <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AI</span>
+              Grow Your Business with <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Custom Software</span>
             </h2>
             <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-              We offer a range of AI-powered services to help businesses innovate and grow. 
+              We offer a range of innovative services to help businesses innovate and grow. 
               Our solutions are built with cutting-edge technology and a focus on delivering value.
             </p>
           </div>
@@ -156,18 +156,23 @@ function Home() {
             {[
               {
                 icon: <FaRobot />,
-                title: "University Assignments Development",
+                title: "Academic Project Development",
                 description: "Professional assistance with university projects, assignments, and research work."
               },
               {
                 icon: <FaRocket />,
-                title: "AI Chatbot Development",
+                title: "Smart AI Chatbot Solutions",
                 description: "Intelligent chatbots powered by AI to automate customer interactions and support."
               },
               {
                 icon: <FaBolt />,
-                title: "Websites for Your Business",
+                title: "Professional Business Websites",
                 description: "Professional business websites that help you establish strong online presence."
+              },
+              {
+                icon: <FaBolt />,
+                title: "Mobile App Development",
+                description: "Custom mobile applications for iOS and Android to expand your digital presence."
               }
             ].map((service, index) => (
               <div 
@@ -213,7 +218,7 @@ function Home() {
             Ready to Innovate with <span className="text-blue-100">AI?</span>
           </h2>
           <p className="text-blue-100 text-lg mb-8">
-            Let's discuss how we can help transform your business with AI-powered solutions. 
+            Let's discuss how we can help transform your business with innovative software solutions. 
             Get in touch with us today to start your project.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">

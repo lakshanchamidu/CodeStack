@@ -50,8 +50,8 @@ function About() {
 
   const goals = [
     {
-      title: "Expand Our AI Solutions",
-      description: "Develop more specialized AI solutions for industries like healthcare, finance, and education, leveraging cutting-edge technologies to solve complex problems."
+      title: "Expand Our Software Solutions",
+      description: "Develop more specialized software solutions for industries like healthcare, finance, and education, leveraging cutting-edge technologies to solve complex problems."
     },
     {
       title: "Grow Our Team",
@@ -59,7 +59,7 @@ function About() {
     },
     {
       title: "Global Partnerships",
-      description: "Form partnerships with international tech companies and clients to expand our service offerings and bring more innovative AI solutions to market."
+      description: "Form partnerships with international tech companies and clients to expand our service offerings and bring more innovative software solutions to market."
     }
   ];
 
@@ -72,7 +72,7 @@ function About() {
             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Us</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            We're a tech startup in Sri Lanka delivering innovative AI solutions and building cutting-edge software for businesses worldwide.
+            We're a tech startup in Sri Lanka delivering custom software solutions including websites, mobile apps, chatbots, and academic projects for clients worldwide.
           </p>
         </div>
       </section>
@@ -86,16 +86,16 @@ function About() {
                 Our <span className="text-blue-600">Story</span>
               </h2>
               <p className="text-gray-700 mb-4 text-base sm:text-lg">
-                Code Stack was founded in 2020 with a vision to deliver cutting-edge AI-powered software solutions to businesses worldwide from our base in Sri Lanka.
+                Codexa was founded in 2023 with a vision to deliver cutting-edge software solutions to businesses worldwide from our base in Sri Lanka.
               </p>
               <p className="text-gray-700 mb-4 text-base sm:text-lg">
-                Our founder, Kalhara Thabrew, recognized the growing demand for innovative AI solutions and saw an opportunity to showcase Sri Lankan talent on the global stage. With over 10 years of experience in software development and AI, he set out to build a company that delivers exceptional results.
+                We recognized the growing demand for quality software solutions and saw an opportunity to showcase Sri Lankan talent on the global stage. Our team combines technical expertise with creative innovation to deliver exceptional results across multiple domains.
               </p>
               <p className="text-gray-700 text-base sm:text-lg">
-                Today, Code Stack specializes in developing AI chatbots, professional websites, and providing expert assistance with university assignments and software projects that help businesses and students achieve their goals.
+                Today, Codexa specializes in developing professional websites, mobile applications, AI chatbots, and providing expert assistance with academic software projects for clients worldwide.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative max-w-sm mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-200/40 to-indigo-200/40 blur-3xl"></div>
               <img 
                 src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
@@ -115,14 +115,14 @@ function About() {
               <div className="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 text-blue-600"><FaBullseye /></div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Mission</h2>
               <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-                To deliver innovative AI-powered solutions that help businesses thrive in an increasingly digital world, while showcasing the talent and capabilities of Sri Lankan tech professionals.
+                To deliver innovative software solutions that help businesses thrive in an increasingly digital world, while showcasing the talent and capabilities of Sri Lankan tech professionals.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-blue-100 shadow-md">
               <div className="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 text-blue-600"><FaStar /></div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Vision</h2>
               <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-                To be recognized globally as a leading AI solutions provider from Sri Lanka, delivering world-class software that drives innovation and showcases the exceptional talent of our tech community.
+                To be recognized globally as a leading software solutions provider from Sri Lanka, delivering world-class software that drives innovation and showcases the exceptional talent of our tech community.
               </p>
             </div>
           </div>
@@ -137,7 +137,7 @@ function About() {
               Our <span className="text-blue-600">Values</span>
             </h2>
             <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-3xl mx-auto">
-              These core principles guide everything we do at Code Stack, from how we develop software to how we serve our clients.
+              These core principles guide everything we do at Codexa, from how we develop software to how we serve our clients.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
@@ -286,7 +286,7 @@ function About() {
               Our Future <span className="text-blue-600">Goals</span>
             </h2>
             <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-              We have ambitious plans for the future of Code Stack and our impact on the tech ecosystem.
+              We have ambitious plans for the future of Codexa and our impact on the tech ecosystem.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">

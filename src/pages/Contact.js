@@ -40,7 +40,7 @@ function Contact() {
             Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Touch</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto px-4">
-            Let's discuss how we can help transform your business with AI-powered solutions. We're here to answer your questions and start your project.
+            Let's discuss how we can help transform your business with innovative software solutions. We're here to answer your questions and start your project.
           </p>
         </div>
       </section>
