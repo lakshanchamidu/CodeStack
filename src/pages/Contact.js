@@ -188,14 +188,7 @@ function Contact() {
                     <div>
                       <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">Location</h3>
                       <p className="text-sm sm:text-base text-gray-700">Colombo, Sri Lanka</p>
-                      <a 
-                        href="https://maps.app.goo.gl/5Pj3XuAYiydTurCA9" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-sm sm:text-base text-blue-600 hover:text-blue-700 transition-colors inline-block mt-1"
-                      >
-                        View Map →
-                      </a>
+                      
                     </div>
                   </div>
                   <div className="flex items-start gap-3 sm:gap-4">
