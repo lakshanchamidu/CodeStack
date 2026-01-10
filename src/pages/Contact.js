@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import Toast from '../components/Toast';
 
@@ -16,7 +16,7 @@ function Contact() {
 
   const showToast = (message, type = 'success') => {
     setToast({ message, type });
-    setTimeout(() => setToast(null), 5000); // 5 seconds passe auto close
+    setTimeout(() => setToast(null), 5000); 
   };
 
   const handleChange = (e) => {

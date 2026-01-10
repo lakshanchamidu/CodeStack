@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { FaLinkedin, FaTwitter, FaFacebook, FaMapMarkerAlt, FaPhone, FaEnvelope, FaBars, FaTimes} from 'react-icons/fa';
+import { FaLinkedin, FaFacebook, FaMapMarkerAlt, FaPhone, FaEnvelope, FaBars, FaTimes} from 'react-icons/fa';
 import './App.css';
 import Home from './pages/Home';
 import Services from './pages/Services';
