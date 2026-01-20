@@ -79,15 +79,15 @@ function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl"></div>
                 <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div className="text-center group">
-                    <div className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-110 transition-transform duration-300">3+</div>
+                    <div className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-110 transition-transform duration-300">1+</div>
                     <div className="text-gray-700 font-medium">Years of Excellence</div>
                   </div>
                   <div className="text-center group">
-                    <div className="text-5xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-110 transition-transform duration-300">100+</div>
+                    <div className="text-5xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-110 transition-transform duration-300">50+</div>
                     <div className="text-gray-700 font-medium">Projects Delivered</div>
                   </div>
                   <div className="text-center group">
-                    <div className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-110 transition-transform duration-300">50+</div>
+                    <div className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-110 transition-transform duration-300">20+</div>
                     <div className="text-gray-700 font-medium">Happy Clients</div>
                   </div>
                 </div>

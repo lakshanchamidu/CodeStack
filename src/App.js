@@ -118,7 +118,7 @@ function App() {
                   </p>
                   <p className="flex items-center gap-2">
                     <FaPhone className="text-blue-600" />
-                    +94 76 945 2840
+                    +94 75 032 6062
                   </p>
                   <p className="flex items-center gap-2">
                     <FaEnvelope className="text-blue-600" />
