@@ -186,7 +186,7 @@ function About() {
                   Passionate developer specializing in modern web technologies and building scalable applications.
                 </p>
                 <div className="flex gap-4 justify-center">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl transform hover:scale-110 duration-200">
+                  <a href="https://www.linkedin.com/in/chamidulakshan/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl transform hover:scale-110 duration-200">
                     <FaLinkedin />
                   </a>
                 </div>
